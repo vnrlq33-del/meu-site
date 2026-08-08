@@ -10,7 +10,7 @@ const CONFIG = {
 
   // Sua foto. Coloque o arquivo em assets/ e escreva o caminho aqui.
   // Ex.: "assets/modelo.jpg"
-  foto: "assets/modelo.jpg",
+  foto: "assets/1.jpg",
 
   // Links das suas redes (troque pelos seus @)
   instagram: "https://instagram.com/_laviniacarraro",
