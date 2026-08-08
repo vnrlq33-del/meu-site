@@ -1,0 +1,16 @@
+{
+  "name": "biosite-lavinia",
+  "version": "1.0.0",
+  "description": "Bio site premium com pagamento PIX via MisticPay (frontend HTML/CSS/JS + backend mínimo).",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

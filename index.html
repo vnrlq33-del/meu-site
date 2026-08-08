@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Lavínia Carraro</title>
+  <meta name="description" content="Meu link na bio." />
+
+  <!-- Fonte (opcional). Se ficar offline, o site usa a fonte do sistema. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <div class="column">
+
+      <!-- ============ PERFIL ============ -->
+      <header class="profile">
+        <div class="avatar">
+          <img id="profilePhoto" src="assets/modelo.jpg" alt="Foto de perfil"
+               onerror="this.style.display='none'; this.parentElement.classList.add('avatar--empty');" />
+          <span class="avatar__fallback" aria-hidden="true">L</span>
+        </div>
+        <h1 id="profileName" class="profile__name">Lavínia Carraro</h1>
+        <p class="profile__status">
+          <span class="dot dot--online"></span>
+          <span>Online</span>
+        </p>
+      </header>
+
+      <!-- ============ REDES SOCIAIS ============ -->
+      <nav class="socials" aria-label="Redes sociais">
+        <a id="linkInstagram" class="social" href="#" target="_blank" rel="noopener" aria-label="Instagram">
+          <!-- ícone Instagram -->
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2.5" y="2.5" width="19" height="19" rx="5.5"></rect>
+            <circle cx="12" cy="12" r="4.2"></circle>
+            <circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"></circle>
+          </svg>
+        </a>
+        <a id="linkTiktok" class="social" href="#" target="_blank" rel="noopener" aria-label="TikTok">
+          <!-- ícone TikTok -->
+          <svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor">
+            <path d="M16.5 3c.32 2.1 1.5 3.63 3.5 3.9v2.42c-1.28.08-2.5-.28-3.5-1v6.06C16.5 17.7 14.1 20 11 20s-5-2.3-5-5.42c0-2.9 2.08-5.12 4.9-5.12.32 0 .63.02.93.08v2.6a2.9 2.9 0 0 0-.93-.16c-1.4 0-2.4 1.06-2.4 2.5s1 2.5 2.4 2.5c1.5 0 2.6-1.1 2.6-2.9V3h3z"></path>
+          </svg>
+        </a>
+      </nav>
+
+      <!-- ============ CARD TELEGRAM (PACK) ============ -->
+      <a id="packCard" class="pack" href="#" target="_blank" rel="noopener">
+        <span class="pack__icon" aria-hidden="true">
+          <!-- ícone Telegram (marca reconhecível, não avião genérico) -->
+          <svg viewBox="0 0 24 24" width="26" height="26">
+            <circle cx="12" cy="12" r="12" fill="#229ED9"></circle>
+            <path fill="#fff" d="M18.1 7.1l-2.02 9.53c-.15.67-.55.83-1.11.52l-3.07-2.26-1.48 1.43c-.16.16-.3.3-.62.3l.22-3.13 5.7-5.15c.25-.22-.05-.34-.39-.13l-7.04 4.43-3.03-.95c-.66-.2-.67-.66.14-.98l11.85-4.57c.55-.2 1.03.13.85.98z"></path>
+          </svg>
+        </span>
+        <span id="packName" class="pack__name">Pack</span>
+        <span id="packPrice" class="pack__price">R$ 1,11</span>
+      </a>
+
+      <!-- ============ ONLINE AGORA (abre o chat) ============ -->
+      <button id="onlineBtn" class="pill" type="button">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.5 8.5 8.5 0 0 1-3.8-.9L3 21l1.9-5.7a8.5 8.5 0 0 1-.9-3.8A8.38 8.38 0 0 1 12.5 3 8.38 8.38 0 0 1 21 11.5z"></path>
+        </svg>
+        <span class="dot dot--online"></span>
+        <span class="pill__strong">ONLINE AGORA</span>
+      </button>
+
+    </div>
+  </main>
+
+  <!-- ============ MODAL ÚNICO (chat + pagamento) ============ -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+
+    <section class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="modalName">
+      <header class="chat__header">
+        <div class="chat__avatar">
+          <img id="chatPhoto" src="assets/modelo.jpg" alt=""
+               onerror="this.style.display='none'; this.parentElement.classList.add('avatar--empty');" />
+          <span class="avatar__fallback avatar__fallback--sm" aria-hidden="true">L</span>
+        </div>
+        <div class="chat__id">
+          <strong id="modalName">Lavínia Carraro</strong>
+          <span class="chat__presence"><span class="dot dot--online"></span> Online agora</span>
+        </div>
+        <button class="chat__close" type="button" data-close aria-label="Fechar">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+        </button>
+      </header>
+
+      <!-- corpo do chat (mensagens) -->
+      <div id="chatBody" class="chat__body"></div>
+
+      <!-- rodapé dinâmico: aqui o JS injeta botão / formulário / PIX / whatsapp / input -->
+      <div id="chatFooter" class="chat__footer"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
