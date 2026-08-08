@@ -10,7 +10,7 @@ const CONFIG = {
 
   // Sua foto. Coloque o arquivo em assets/ e escreva o caminho aqui.
   // Ex.: "assets/modelo.jpg"
-  foto: "assets/1.jpeg",
+  foto: "assets/1.jpg",
 
   // Links das suas redes (troque pelos seus @)
   instagram: "https://instagram.com/_laviniacarraro",
@@ -18,7 +18,7 @@ const CONFIG = {
   telegram:  "https://t.me/laviniacarrarobot",
 
   // Card do Pack (leva direto pro seu Telegram)
-  packNome:  "Pack",
+  packNome:  "GRUPINHO PRIVADO",
   packPreco: "",
 
   // Preço para liberar o contato pelo chat (em reais).
