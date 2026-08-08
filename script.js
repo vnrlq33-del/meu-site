@@ -13,13 +13,13 @@ const CONFIG = {
   foto: "assets/modelo.jpg",
 
   // Links das suas redes (troque pelos seus @)
-  instagram: "https://instagram.com/SEU_USUARIO",
-  tiktok:    "https://www.tiktok.com/@SEU_USUARIO",
-  telegram:  "https://t.me/SEU_USUARIO",
+  instagram: "https://instagram.com/_laviniacarraro",
+  tiktok:    "https://www.tiktok.com/@_laviniacarraro",
+  telegram:  "https://t.me/laviniacarrarobot",
 
   // Card do Pack (leva direto pro seu Telegram)
   packNome:  "Pack",
-  packPreco: "R$ 1,11",
+  packPreco: "",
 
   // Preço para liberar o contato pelo chat (em reais).
   // IMPORTANTE: o VALOR REAL cobrado é definido no backend (.env),
